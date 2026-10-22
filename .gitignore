@@ -1,0 +1,19 @@
+
+# Ignore environment files in all folders
+.env
+.env.*
+!.env.example
+
+# Ignore dependencies
+node_modules/
+
+# Ignore build output
+build/
+dist/
+
+# Ignore logs
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

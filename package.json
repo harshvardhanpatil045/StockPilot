@@ -1,0 +1,11 @@
+{
+  "name": "stockpilot",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,DASHBOARD,FRONTEND -c \"magenta,blue,green\" \"npm --prefix backend start\" \"npm --prefix dashboard start\" \"npm --prefix frontend start\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

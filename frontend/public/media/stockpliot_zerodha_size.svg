@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="609" height="80" viewBox="0 0 609 80" role="img" aria-label="Stockpliot logo">
+  <defs>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20c997"/>
+      <stop offset="100%" stop-color="#38d65b"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4,5)">
+    <path d="M34 2 A33 33 0 1 0 65 45" fill="none" stroke="#0b1d33" stroke-width="6" stroke-linecap="round"/>
+    <path d="M10 48 L25 35 L34 40 L49 24 L45 24 L61 10 L59 29 L55 25 L37 45 L27 40 L13 53" fill="url(#green)"/>
+    <rect x="12" y="49" width="8" height="12" rx="1" fill="#0b1d33"/>
+    <rect x="25" y="43" width="8" height="18" rx="1" fill="#128c83"/>
+    <rect x="38" y="35" width="8" height="26" rx="1" fill="#20c997"/>
+  </g>
+  <text x="84" y="56" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.8" fill="#0b1d33">Stock</text>
+  <text x="213" y="56" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.8" fill="url(#green)">pliot</text>
+</svg>
