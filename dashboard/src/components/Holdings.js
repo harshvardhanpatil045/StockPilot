@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { VerticalGraph } from "./VerticalGraph";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3002";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "";
 
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);

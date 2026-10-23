@@ -4,7 +4,7 @@ import GeneralContext from "./GeneralContext";
 import { watchlist } from "../data/data";
 import "./BuyActionWindow.css";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3002";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "";
 
 const BuyActionWindow = ({ uid }) => {
   const { closeBuyWindow } = useContext(GeneralContext);
