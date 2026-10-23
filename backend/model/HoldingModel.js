@@ -1,6 +1,6 @@
 const { model } = require("mongoose");
 
-const { HoldingsSchema } = require("../schema/HoldingsSchema");
+const { HoldingsSchema } = require("../Schema/HoldingsSchema");
 
 const HoldingsModel = model("holdings", HoldingsSchema);
 
