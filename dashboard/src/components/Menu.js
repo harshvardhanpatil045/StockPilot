@@ -122,7 +122,7 @@ const Menu = ({ user, onLogout }) => {
               <div style={{ fontSize: "0.8rem", color: "#777" }}>{user?.email || ""}</div>
             </div>
             <a
-              href={process.env.REACT_APP_FRONTEND_URL || "http://localhost:3000"}
+              href="/"
               style={{
                 display: "block",
                 padding: "6px 0",

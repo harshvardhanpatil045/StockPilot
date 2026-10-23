@@ -4,8 +4,8 @@ import axios from "axios";
 import Dashboard from "./Dashboard";
 import TopBar from "./TopBar";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3002";
-const FRONTEND_URL = process.env.REACT_APP_FRONTEND_URL || "http://localhost:3000";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "";
+const FRONTEND_URL = "/";
 
 const Home = () => {
   const [user, setUser] = useState(null);
