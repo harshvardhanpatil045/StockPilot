@@ -61,11 +61,11 @@ function Signup({ defaultMode = "signup" }) {
           localStorage.setItem("stockpilot_user", JSON.stringify(user));
           setSuccessMessage("Login successful! Redirecting to your dashboard...");
 
-          setTimeout(() => {
-            window.location.href = `${DASHBOARD_URL}/?token=${token}&user=${encodeURIComponent(
-              JSON.stringify(user)
-            )}`;
-          }, 800);
+          
+setTimeout(() => {
+  window.location.href = "/dashboard/";
+}, 800);
+
         }
       } catch (err) {
         console.error("Login error:", err);
@@ -115,11 +115,11 @@ function Signup({ defaultMode = "signup" }) {
           localStorage.setItem("stockpilot_user", JSON.stringify(user));
           setSuccessMessage("Account created successfully! Launching trading terminal...");
 
-          setTimeout(() => {
-            window.location.href = `${DASHBOARD_URL}/?token=${token}&user=${encodeURIComponent(
-              JSON.stringify(user)
-            )}`;
-          }, 1000);
+          
+setTimeout(() => {
+  window.location.href = "/dashboard/";
+}, 1000);
+
         }
       } catch (err) {
         console.error("Signup error:", err);
