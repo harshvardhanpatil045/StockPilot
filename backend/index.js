@@ -387,38 +387,25 @@ app.post("/newOrder", authenticateToken, async (req, res) => {
 });
 
 // Serve the frontend build
-const frontendBuildPath = path.join(
-  __dirname,
-  "../frontend/build"
-);
+const frontendBuildPath = path.join(__dirname,"../frontend/build");
 
 // Serve the dashboard build
-const dashboardBuildPath = path.join(
-  __dirname,
-  "../dashboard/build"
-);
+const dashboardBuildPath = path.join(__dirname,"../dashboard/build");
 
 // Dashboard assets and files
-app.use(
-  "/dashboard",
-  express.static(dashboardBuildPath)
-);
+app.use("/dashboard",express.static(dashboardBuildPath));
 
 // Frontend assets and files
 app.use(express.static(frontendBuildPath));
 
 // Dashboard React Router fallback (Express 5 compatible)
 app.get(/^\/dashboard(?:\/.*)?$/, (req, res) => {
-  res.sendFile(
-    path.join(dashboardBuildPath, "index.html")
-  );
+  res.sendFile(path.join(dashboardBuildPath, "index.html"));
 });
 
 // Frontend React Router fallback
 app.get(/.*/, (req, res) => {
-  res.sendFile(
-    path.join(frontendBuildPath, "index.html")
-  );
+  res.sendFile(path.join(frontendBuildPath, "index.html"));
 });
 
 // Connect to MongoDB and start server
